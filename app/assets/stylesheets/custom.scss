@@ -50,7 +50,9 @@ p {
 }
 
 /* header */
-header {height: 112px;}
+header {height: 112px;
+  position: fixed;
+}
 
 header li{font-size: 1.8em;}
 
