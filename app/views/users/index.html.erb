@@ -1,3 +1,4 @@
+ <% if current_user.admin? && !current_user?(@user) %>
 <h1>全員</h1>
 
 <%= will_paginate %>
@@ -16,3 +17,6 @@
 </ul>
 
 <%= will_paginate %>
+ <% else %>
+          <h1>クラス</h1>
+  <% end %>

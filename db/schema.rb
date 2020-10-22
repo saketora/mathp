@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_10_19_094803) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "password_digest"
     t.string "class_name"
-    t.boolean "admin", default: false
+    t.boolean "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
