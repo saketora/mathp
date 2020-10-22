@@ -29,14 +29,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -45,7 +45,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 2em;
   line-height: 1.7em;
 }
 
@@ -194,6 +194,7 @@ input {
 	opacity: 0;
 }
 .cp_actab label {
+	font-size: 3em;
 	font-weight: bold;
 	line-height: 3;
 	position: relative;
@@ -216,6 +217,7 @@ input {
 }
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
+  font-size: 3em;
 	max-height: 20em;
 }
 /* Icon */
