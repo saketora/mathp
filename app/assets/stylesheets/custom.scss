@@ -49,6 +49,8 @@ p {
   line-height: 1.7em;
 }
 
+
+
 /* header */
 header {height: 112px;
   position: fixed;
@@ -94,6 +96,7 @@ footer small {
 }
 
 footer ul {
+  font-size: 2em;
   float: right;
   list-style: none;
 }
@@ -107,6 +110,7 @@ footer ul li {
 
 aside {
   section.user_info {
+    font-size: 2em;
     margin-top: 20px;
   }
   section {
@@ -149,9 +153,23 @@ input, textarea, select, .uneditable-input {
   @include box_sizing(border-box);
 }
 
-input {
-  height: auto !important;
+label
+{font-size: 2.3em;
 }
+
+input[type="text"] {
+        height: 60px;
+    }
+
+
+input[type="password"] {
+        height: 60px;
+    }
+    
+    input[type="email"] {
+        height: 60px;
+    }
+
 
 #error_explanation {
   color: red;
@@ -168,12 +186,17 @@ input {
   }
 }
 
+.gravatar_edit
+{font-size: 3em;
+}
+ 
 /* Users index */
 
 .users {
   list-style: none;
   margin: 0;
   li {
+    font-size: 3em;
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
@@ -218,7 +241,7 @@ input {
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
   font-size: 3em;
-	max-height: 20em;
+	max-height: 50em;
 }
 /* Icon */
 .cp_actab label::after {
@@ -239,3 +262,7 @@ input {
 .cp_actab input[type=checkbox]:checked + label::after {
 	transform: rotate(315deg);
 }
+
+
+/* form */
+
