@@ -1,13 +1,15 @@
 class UsersController < ApplicationController
    before_action :logged_in_user, only: [:index, :edit, :update, :users ,:destroy]
    before_action :correct_user,   only: [:edit, :update]
-    before_action :admin_user,     only: :destroy
+    before_action :admin_user,     only: [:destroy, :index]
     
    def index
        @users = User.paginate(page: params[:page])
   end
   
   def show
+       @userc = User.find(params[:id]).class_name
+       @classmates = User.where(class_name: @userc)
     @user = User.find(params[:id])
   end
   
