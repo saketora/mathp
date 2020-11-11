@@ -263,6 +263,61 @@ input[type="password"] {
 	transform: rotate(315deg);
 }
 
+.cp_menu {
+   border-top-left-radius: 400px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+	width: 100%;
+	margin-left: 2em;
+	float: left;
+	padding: 0;
+	margin-bottom: 0em;
+}
+
+.cp_menu label {
+	display: block;
+	position: relative;
+	margin: 0 0 2px 0;
+	padding: 12px;
+	line-height: 1;
+	color: #ffffff;
+	background: #ffffff;
+	cursor: pointer;
+}
+.cp_menu label::before {
+	position: absolute;
+	content: '理由▼';
+	color: blue;
+	right: 20em;
+	top: 25%;
+}
+.cp_menu input {
+	display: none;
+}
+.cp_menu ul {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+.cp_menu p {
+	overflow-y: hidden;
+	max-height: 0;
+	background: #f0ffff;
+	transition: all 0.5s;
+}
+/*リストが増えたらULごとに追加してください*/
+#cp_menu_bar1:checked ~ #link1 p,
+#cp_menu_bar2:checked ~ #link2 p {
+  display: block;
+	max-height: 600px;
+	width: 1000px;
+	opacity: 1;
+	margin-bottom: 0em;
+	
+}
+
 
 /* movies*/
 iframe {
@@ -285,4 +340,9 @@ div.nan{font-size: 2em;
 
 h2.blank2 {margin-bottom : 2em;
   
+}
+h2.blank3 {
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
