@@ -11,6 +11,7 @@ class UsersController < ApplicationController
        @userc = User.find(params[:id]).class_name
        @classmates = User.where(class_name: @userc)
     @user = User.find(params[:id])
+    
   end
   
   def new

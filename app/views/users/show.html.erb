@@ -1,9 +1,11 @@
+<h2 class="blank2"></h2>
 <h1><%= @userc%></h1> 
 <div class="cp_actab">
 <input id="tab-one" type="checkbox" name="tabs">
 <label for="tab-one">クラス</label>
 <div class="cp_actab-content">
   <h2 class="blank1"></h2>
+  
 <ul>
   <% @classmates.each do |classmate| %>
     <li>  <%= gravatar_for classmate, size: 120 %>
@@ -25,10 +27,17 @@
       </h1>
       </section>
   </aside>
+   <div class="col-md-8">
+    <h2>予定</h2> <p>kk</p>  <p>sjjk</p>
+    <p>komokokokokokokokokkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+</div>
 </div>
 
 
-<h2 class="blank1"></h2>
+<h2 class="blank3"></h2>
+<p>
+    (<%= @user.chapter1s.count %>)
+  </p>
  <div class="mono">
    <div class="title">数学Ⅰ</div>
 <h2></h2>

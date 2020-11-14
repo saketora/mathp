@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_094803) do
+ActiveRecord::Schema.define(version: 2020_11_14_015328) do
+
+  create_table "chapter1s", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "course_id"
+    t.integer "chapter_id"
+    t.integer "section_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_chapter1s_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
