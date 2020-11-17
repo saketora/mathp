@@ -4,3 +4,9 @@ User.create!(name:  "鈴木総馬",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: true)
+User.create!(name:  "hana",
+             email: "example@railstutorial.org",
+             class_name: "2020-3-2",
+             password:              "hanana",
+             password_confirmation: "hanana",
+             admin: true)
