@@ -35,11 +35,6 @@
 
 
 <h2 class="blank3"></h2>
-<p>
-    (<%= @user.chapter1s.count %>)
-  </p>
-  
-  
   
     <h1>数学Ⅰ</h1>
     <h2 class="blank2"></h2>
@@ -55,7 +50,7 @@
          <p>第２節　<%= link_to "実数",  doc2_path  %> </p>
          <p>第３節　<%= link_to "１次不等式", doc3_path %></p>
          <p>第４節　<%= link_to "集合と命題",   doc4_path %></p>
-        <p class="gage"> <div id="gauge" style="-moz-background-size: 70% 70%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/４　完了</div></p>
+        <p class="gage"> <div id="gauge" style="-moz-background-size: 70% 70%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech1 %>% 100%;"><%= @nchapter1 %>/4　完了</div></p>
       </p>
     </li>
     <li>
@@ -67,7 +62,7 @@
       <p>
         <p>第１節　<%= link_to "２次関数とグラフ",   doc5_path %></p>
         <p>第２節　<%= link_to "２次方程式と2次不等式",   doc6_path %></p></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech2 %>% 100%;"><%= @nchapter2 %>/2　完了</div>
     </li>
   </ul>
 </div>
@@ -84,7 +79,7 @@
       <p>
         <p>第１節　<%= link_to "三角比",   doc7_path %></p>
         <p>第２節　<%= link_to "三角形への応用",   doc8_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech3 %>% 100%;"><%= @nchapter3 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -95,7 +90,7 @@
       <p>
          <p>第１節　<%= link_to "式と計算",   doc9_path %></p>
          <p>第２節　<%= link_to "実数",   doc10_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech4 %>% 100%;"><%= @nchapter4 %>/2　完了</div>
       </p>
     </li>
   </ul>
@@ -116,7 +111,7 @@
       <p> 
       <p>第１節　<%= link_to "式と計算",   doc11_path %></p>
       <p>第２節　<%= link_to "等式と不等式の証明",   doc12_path %></p>
-      <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+      <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech5 %>% 100%;"><%= @nchapter5 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -127,7 +122,7 @@
       <p>
         <p>第１節　<%= link_to "２次関数とグラフ",   doc13_path %></p>
         <p>第２節　<%= link_to "２次方程式と2次不等式",   doc14_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech6 %>% 100%;"><%= @nchapter6 %>/2　完了</div>
       </p>
     </li>
   </ul>
@@ -147,7 +142,7 @@
         <p>第１節　<%= link_to "点と直線",   doc15_path %></p>
         <p>第２節　<%= link_to "円",   doc16_path %></p>
         <p>第３節　<%= link_to "軌跡と領域",   doc17_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/3　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech7 %>% 100%;"><%= @nchapter7 %>/3　完了</div>
     </p>
     </li>
     <li>
@@ -158,7 +153,7 @@
       <p>
        <p>第１節　<%= link_to "三角関数",   doc18_path %></p>
        <p>第２節　<%= link_to "加法定理",   doc19_path %></p>
-       <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+       <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech8 %>% 100%;"><%= @nchapter8 %>/2　完了</div>
      </p>
     </li>
   </ul>
@@ -177,7 +172,7 @@
       <p>
         <p>第１節　<%= link_to "式と計算",   doc20_path %></p>
         <p>第２節　<%= link_to "等式と不等式の証明",   doc21_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech9 %>% 100%;"><%= @nchapter9 %>/2　完了</div>
      </p>
     </li>
     <li>
@@ -189,7 +184,7 @@
         <p>第１節　<%= link_to "微分係数と導関数",   doc22_path %></p>
         <p>第２節　<%= link_to "導関数の応用",   doc23_path %></p>
         <p>第３節　<%= link_to "積分法",   doc24_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/3　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech10 %>% 100%;"><%= @nchapter10 %>/3　完了</div>
       </p>
     </li>
   </ul>
@@ -210,7 +205,7 @@
       <p>
        <p>第１節　<%= link_to "式と計算",   doc25_path %></p>
        <p>第２節　<%= link_to "等式と不等式の証明",   doc26_path %></p>
-       <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+       <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech11 %>% 100%;"><%= @nchapter11 %>/2　完了</div>
      </p>
     </li>
     <li>
@@ -221,7 +216,7 @@
       <p>
         <p>第１節　<%= link_to "２次曲線",   doc27_path %></p>
         <p>第２節　<%= link_to "媒介変数表示と極座標",   doc28_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech12 %>% 100%;"><%= @nchapter12 %>/2　完了</div>
      </p>
     </li>
   </ul>
@@ -240,7 +235,7 @@
       <p>
          <p>第１節　<%= link_to "点と直線",   doc29_path %></p>
          <p>第２節　<%= link_to "軌跡と領域",   doc30_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech13 %>% 100%;"><%= @nchapter13 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -251,7 +246,7 @@
       <p>
         <p>第１節　<%= link_to "数列の極限",   doc31_path %></p>
         <p>第２節　<%= link_to "関数の極限",   doc32_path %></p>
-        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+        <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech14 %>% 100%;"><%= @nchapter14 %>/2　完了</div>
      </p>
     </li>
   </ul>
@@ -269,7 +264,7 @@
       <p>
          <p>第１節　<%= link_to "式と計算",   doc33_path %></p>
          <p>第２節　<%= link_to "等式と不等式の証明",   doc34_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech15 %>% 100%;"><%= @nchapter15 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -281,7 +276,7 @@
          <p>第１節　<%= link_to "導関数の応用",   doc35_path %></p>
          <p>第２節　<%= link_to "速度と近似式",   doc36_path %></p>
          <p>第３節　<%= link_to "積分法",   doc37_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/3　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech16 %>% 100%;"><%= @nchapter16 %>/3　完了</div>
       </p>
     </li>
   </ul>
@@ -299,7 +294,7 @@
       <p>
          <p>第１節　<%= link_to "不定積分",   doc38_path %></p>
          <p>第２節　<%= link_to "定積分",   doc39_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech17 %>% 100%;"><%= @nchapter17 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -311,7 +306,7 @@
          <p>第１節　<%= link_to "点と直線",  doc40_path %></p>
          <p>第２節　<%= link_to "円",  doc41_path %></p>
          <p>第３節　<%= link_to "軌跡と領域",  doc42_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/3　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech18 %>% 100%;"><%= @nchapter18 %>/3　完了</div>
       </p>
     </li>
   </ul>
@@ -331,7 +326,7 @@
       <p>
          <p>第１節　<%= link_to "集合の要素と個数",   doc43_path %></p>
          <p>第２節　<%= link_to "確率",   doc44_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech19 %>% 100%;"><%= @nchapter19 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -342,7 +337,7 @@
       <p>
          <p>第１節　<%= link_to "平面図形",   doc45_path %></p>
          <p>第２節　<%= link_to "空間図形",   doc46_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech20 %>% 100%;"><%= @nchapter20 %>/2　完了</div>
       </p>
     </li>
   </ul>
@@ -360,7 +355,7 @@
          <p>第１節　<%= link_to "約数と倍数",   doc47_path %></p>
          <p>第２節　<%= link_to "ユークリッドの互除法",   doc48_path %></p>
          <p>第３節　<%= link_to "整数の性質の活用",   doc49_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/3　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech21 %>% 100%;"><%= @nchapter21 %>/3　完了</div>
       </p>
     </li>
     
@@ -376,7 +371,7 @@
       <p>
           <p>第１節　<%= link_to "平面上のベクトルと演算",   doc50_path %></p>
           <p>第２節　<%= link_to "ベクトルと平面図形",   doc51_path %></p>
-          <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+          <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech22 %>% 100%;"><%= @nchapter22 %>/2　完了</div>
       </p>
     </li>
   </ul>
@@ -394,7 +389,7 @@
       <p>
          <p>第１節　<%= link_to "二次曲線",   doc52_path %></p>
          <p>第２節　<%= link_to "媒介変数表示と極座標",   doc54_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech23 %>% 100%;"><%= @nchapter23 %>/2　完了</div>
       </p>
     </li>
     <li>
@@ -405,7 +400,7 @@
       <p>
          <p>第１節　<%= link_to "数列とその和",   doc53_path %></p>
          <p>第２節　<%= link_to "数学的帰納法",   doc54_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech24 %>% 100%;"><%= @nchapter24 %>/2　完了</div>
       </p>
     </li>
   </ul>
@@ -422,7 +417,7 @@
       <p>
          <p>第１節　<%= link_to "確率分布",   doc56_path %></p>
          <p>第２節　<%= link_to "統計的な推測",  doc57_path %></p>
-         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: 50% 100%;">/2　完了</div>
+         <div id="gauge" style="-moz-background-size: 70% 100%;-webkit-background-size:70% 100%;-o-background-size: 70% 100%;background-size: <%= @ratech25 %>% 100%;"><%= @nchapter25 %>/2　完了</div>
       </p>
     </li>
   </ul>
