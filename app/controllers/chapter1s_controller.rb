@@ -17,7 +17,7 @@ class Chapter1sController < ApplicationController
   
    private
 
-    def chapter1_params
-      params.require(:chapter1).permit(:course_id, :chapter_id, :section_id )
-    end
+   def chapter1_params
+      params.require(:chapter1).permit(:course_id, :chapter_id, :section_id)
+   end
 end
