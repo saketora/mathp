@@ -1,3 +1,14 @@
 <h1>１次不等式</h1>
 <p>Find me in app/views/doc_pages/doc3.html.erb</p>
+
+<% if logged_in? %>
+<%= form_with model: @pbar do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+   <%= f.hidden_field :course_id, :value => "1" %>
+   <%= f.hidden_field :chapter_id, :value => "1" %>
+   <%= f.hidden_field :section_id, :value => "3" %>
+   <%= f.submit  "Post", class: "btn btn-primary" %>
+<% end %>
+<% end %>
+
 <h2><%= link_to "次へ", doc4_path %></h2>

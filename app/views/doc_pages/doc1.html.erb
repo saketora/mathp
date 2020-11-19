@@ -184,11 +184,23 @@
 <p>これでこの節は終わりです。お疲れさまでした。</p>
 
 
+<% if logged_in? %>
+<%= form_with model: @pbar do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+   <%= f.hidden_field :course_id, :value => "1" %>
+   <%= f.hidden_field :chapter_id, :value => "1" %>
+   <%= f.hidden_field :section_id, :value => "1" %>
+  <%= f.submit  "Post", class: "btn btn-primary" %>
+<% end %>
+<% end %>
+<p><%= @user %>か</p>
 
 
-
-
-
+<% if @user %>
+  # ログインユーザー用のリンク
+<% else %>
+  # ログインしていないユーザー用のリンク
+<% end %>
 
 
 <h2 class="blank2"></h2>

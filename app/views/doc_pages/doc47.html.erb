@@ -1,1 +1,10 @@
 <h1>約数と倍数</h1>
+<% if logged_in? %>
+<%= form_with model: @pbar do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+   <%= f.hidden_field :course_id, :value => "4" %>
+   <%= f.hidden_field :chapter_id, :value => "3" %>
+   <%= f.hidden_field :section_id, :value => "1" %>
+  <%= f.submit  "終わったら進捗を共有しよう", class: "btn btn-primary" %>
+<% end %>
+<% end %>
