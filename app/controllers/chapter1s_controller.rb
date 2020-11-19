@@ -5,7 +5,7 @@ class Chapter1sController < ApplicationController
      @pbar = current_user.chapter1s.build(chapter1_params)
     if @pbar.save
       flash[:success] = "Micropost created!"
-     # redirect_to root_url
+      redirect_to root_url
     else
       flash[:success] = "ばーか！！！"
       redirect_to root_url
