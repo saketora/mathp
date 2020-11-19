@@ -4,10 +4,10 @@ class Chapter1sController < ApplicationController
   def create
      @pbar = current_user.chapter1s.build(chapter1_params)
     if @pbar.save
-      flash[:success] = "Micropost created!"
+      flash[:success] = "お疲れ様です!"
       redirect_to root_url
     else
-      flash[:success] = "ばーか！！！"
+      flash[:danger] = "ここはすでに終了しています"
       redirect_to root_url
     end
   end
