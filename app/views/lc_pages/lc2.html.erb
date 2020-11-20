@@ -1,3 +1,12 @@
 <h1>実数</h1>
-<p>Find me in app/views/doc_pages/doc2.html.erb</p>
+<% if logged_in? %>
+<%= form_with model: @pbar do |f| %>
+<%= render 'shared/error_messages', object: f.object %>
+   <%= f.hidden_field :course_id, :value => "1" %>
+   <%= f.hidden_field :chapter_id, :value => "1" %>
+   <%= f.hidden_field :section_id, :value => "2" %>
+  <%= f.submit  "終わったら進捗を共有しよう！", class: "btn btn-primary" %>
+<% end %>
+<% end %>
+<h2 cclass="blank2"></h2>
 <h2><%= link_to "次へ", lc3_path %></h2>
